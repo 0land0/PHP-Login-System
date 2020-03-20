@@ -6,15 +6,18 @@
 
 <!DOCTYPE html>
 <head>
+
 	<!-- UIkit CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.2/dist/css/uikit.min.css" />
 	<title>Register</title>
+	<script src="jquery-3.4.1.min"></script>
+</head>
 <body>
 	<!-- UIkit JS -->
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.2/dist/js/uikit.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.2/dist/js/uikit-icons.min.js"></script>
 
-	<form class="uk-form-stacked js-login">
+	<form class="uk-form-stacked js-register">
     <fieldset class="uk-fieldset">
 
         <legend class="uk-legend">Register</legend>
@@ -27,12 +30,14 @@
             <label><input class="uk-input" type="password" name="Password" required='required' placeholder='Password Here'> Password</label>
         </div>
 
+        <div class="uk-margin uk-alert uk-alert-danger js-error" style='display:none;'>
+        </div>
+
         <div class='uk-margin'>
-        	<button class="uk-button uk-button-default" type="submit">Login</button>
+        	<button class="uk-button uk-button-default" type="submit">Register</button>
         </div>
 
     </fieldset>
 </form>
-
-	<?php require_once "inc/footer.php"; ?>
+	<script src="/php_login/assets/js/main.js"></script>
 </body>
